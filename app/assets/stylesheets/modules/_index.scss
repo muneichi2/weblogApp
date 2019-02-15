@@ -1,0 +1,41 @@
+.wrapper {
+  max-width: 100%;
+  display: flex;
+  background: $whitesmoke;
+  flex-wrap: wrap;
+}
+
+.main__box--red {
+  @include box;
+  background: $crusta;
+}
+
+.main__box--yellow {
+  @include box;
+  background: $dandelion;
+}
+
+.main__box--orange {
+  @include box;
+  background: $carrot;
+}
+
+.main__box--green {
+  @include box;
+  background: $shamrock;
+}
+
+.main__box--blue {
+  @include box;
+  background: $egyptianblue;
+}
+
+.main__box--purple {
+  @include box;
+  background: $amethyst;
+}
+
+.icon {
+  font-size: 10rem;
+  color: $whitesmoke;
+}
