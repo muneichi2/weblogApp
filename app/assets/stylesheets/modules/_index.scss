@@ -1,0 +1,122 @@
+.wrapper {
+  max-width: 100%;
+  background: $romance;
+}
+
+.main__content {
+  max-width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon {
+  align-self: center;
+  font-size: 6rem;
+  color: $whitesmoke;
+}
+
+.main__box--red {
+  @include box;
+  &--icon {
+    @include box--icon;
+    background: $bittersweet;
+  }
+  &--content {
+    @include box--content;
+    background: $pomegranate;
+  }
+  &--text {
+    @include box--text;
+  }
+}
+
+.main__box--yellow {
+  @include box;
+  &--icon {
+    @include box--icon;
+    background: $dandelion;
+  }
+  &--content {
+    @include box--content;
+    background: $nanohanacha_gold;
+  }
+  &--text {
+    @include box--text;
+  }
+}
+
+.main__box--green {
+  @include box;
+  &--icon {
+    @include box--icon;
+    background: $shamrock;
+  }
+  &--content {
+    @include box--content;
+    background: $turquoise;
+  }
+  &--text {
+    @include box--text;
+  }
+}
+
+.main__box--blue {
+  @include box;
+  &--icon {
+    @include box--icon;
+    background: $peterriver;
+  }
+  &--content {
+    @include box--content;
+    background: $egyptianblue;
+  }
+  &--text {
+    @include box--text;
+  }
+}
+
+.main__box--purple {
+  @include box;
+  &--icon {
+    @include box--icon;
+    background: $wisteria;
+  }
+  &--content {
+    @include box--content;
+    background: $amethyst;
+  }
+  &--text {
+    @include box--text;
+  }
+}
+
+.main__box--orange {
+  @include box;
+  &--icon {
+    @include box--icon;
+    background: $orange;
+  }
+  &--content {
+    @include box--content;
+    background: $carrot;
+  }
+  &--text {
+    @include box--text;
+  }
+}
+
+.main__box--gray {
+  @include box;
+  &--icon {
+    @include box--icon;
+    background: $sapphire;
+  }
+  &--content {
+    @include box--content;
+    background: $nero;
+  }
+  &--text {
+    @include box--text;
+  }
+}
