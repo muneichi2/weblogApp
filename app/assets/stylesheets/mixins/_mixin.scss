@@ -1,25 +1,9 @@
-@mixin box {
-  width: 14rem;
-  height: 16rem;
-  margin: 0.5rem;
-}
-
-@mixin box--icon {
-  width: 100%;
-  height: 9rem;
+@mixin content {
   display: inline-flex;
+  width: 30rem;
+  height: 20rem;
+  background: $lightcoral;
+  text-decoration: none;
   justify-content: center;
 }
 
-@mixin box--content {
-  width: 100%;
-  height: 7rem;
-  align-self: flex-end;
-}
-
-@mixin box--text {
-  display: inline-block;
-  padding: 0.5rem;
-  color: $whitesmoke;
-  font-family: 'Courier';
-}
