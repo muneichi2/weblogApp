@@ -1,9 +1,27 @@
 %header
-  %h1
-    = link_to root_path, class: 'title' do
-      Muneichi
-  .sns
-    = link_to root_path, class: 'sns__icon' do
-      = fa_icon 'twitter'
-    = link_to root_path, class: 'sns__icon' do
-      = fa_icon 'instagram'
+  .header__top
+    .header__left
+      %p
+        = link_to root_path, class: 'header__title' do
+          Muneichi.
+    .header__right
+      .header__sns
+        = link_to root_path, class: 'sns--icon' do
+          = fa_icon 'twitter'
+        = link_to root_path, class: 'sns--icon' do
+          = fa_icon 'instagram'
+  .header__bottom
+    %nav
+      %ul
+        %li.header__about
+          = link_to about_contents_path do
+            About
+        %li.header__works
+          = link_to root_path do
+            Works
+        %li.header__posts
+          = link_to root_path do
+            Posts
+        %li.header__contact
+          = link_to root_path do
+            Contact

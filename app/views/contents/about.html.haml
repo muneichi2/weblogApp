@@ -1,6 +1,27 @@
 = render 'modules/header'
 
 %main.about
-  .about__title
+  %h2.about__title
     About
-    .about__content
+  %p.about__name
+    Soichiro Muneichi
+  %p.about__content
+    滋賀県出身。
+    %br 前職では不動産業界で個人営業をしていました。
+    退職後はITエンジニアを目指しスクールに通学して勉強しています。
+    %br 今後は自身のアイデアを形にするためのスキルを身につけていきます。
+  %dl.about__sns
+    .about__sns--twitter
+      %dt.about__sns--twitter--nav
+        twitter:
+      %dd.about__sns--twitter--link
+        = link_to root_path, class: 'about__sns--twitter--link' do
+          muneichi_eng
+    .about__sns--instagram
+      %dt.about__sns--instagram--nav
+        instagram:
+      %dd.about__sns--instagram--link
+        = link_to root_path, class: 'about__sns--instagram--link' do
+          muneichin
+
+= render 'modules/footer'
