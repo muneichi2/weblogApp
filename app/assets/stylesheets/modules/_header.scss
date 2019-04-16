@@ -1,27 +1,68 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  height: 4rem;
-  max-width: 100%;
+  width: 90rem;
+  max-height: 7rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #ddd;
 }
 
-h1 {
-  padding: 2rem;
+.header__top {
+  width: 60rem;
+  height: 5rem;
+  margin: 0 auto;
 }
 
-.title {
+.header__left {
+  float: left;
+  width: 12rem;
+}
+
+.header__left p {
+  padding: 1.5rem 1rem;
+  font-weight: lighter;
+  letter-spacing: 0.1rem;
+}
+
+.header__title {
   font-size: 2rem;
-  font-family: 'Courier';
-  text-decoration: none;
   color: $nero;
 }
 
-.sns {
-  padding: 2rem;
+.header__right {
+  float: right;
+  width: 10rem;
 }
 
-.sns__icon {
-  font-size: 2rem;
-  text-decoration: none;
+.header__sns {
+  float: right;
+  padding: 1.5rem 1rem;
+}
+
+.sns--icon {
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  color: $nero;
+}
+
+.header__bottom {
+  clear: both;
+  width: 60rem;
+  height: 2rem;
+  margin: 0 auto;
+}
+
+.header__bottom nav {
+  float: right;
+  padding-right: 1rem;
+}
+
+.header__bottom li {
+  float: left;
+  padding-left: 3rem;
+}
+
+.header__bottom a {
   color: $nero;
 }

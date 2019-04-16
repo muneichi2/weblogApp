@@ -1,13 +1,30 @@
-= render 'modules/header'
+.body__wrap
+  = render 'modules/header'
 
-%main.top
-  .top__figure
-  .top__content
-    = link_to about_contents_path, class: 'top__about' do
-      %h2.top__subtitle About
-    = link_to root_path, class: 'top__works' do
-      %h2.top__subtitle Works
-    = link_to posts_path, class: 'top__posts' do
-      %h2.top__subtitle Posts
+  %main.top
+    .top__visual
+      .top__container
+        %h1
+          My Works
+    %section.top__heading
+      %h2
+        Servise
+      %section.top__content
+        %h3
+          コーディング
+        %p
+          Webサイト・Webアプリの作成を行っています。HTMLとCSSでのマークアップを始め、JavaScriptを使用した動的なページの作成やRuby on Railsを使用したアプリケーションの開発など、多様なコーディングを行っております。
+      %section.top__content
+        %h3
+          デザイン
+        %p
+          Webデザインを作成いたします。主にフラットデザインを用い、使う人にとって分かりやすいインターフェースになるように心がけております。お客様のプランに最適なデザインを提案させていただきます。
+      %section.top__content
+        %h3
+          ライフスタイル
+        %p
+          お客様の要望をヒアリングし、ニュース、エンターテイメント、ファイナンス、カルチャーなど様々なジャンルの中から、生活を豊かにする最適なWebコンテンツ・アプリケーションを提案いたします。
 
-%footer
+  = render 'modules/footer'
+
+
